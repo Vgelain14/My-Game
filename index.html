@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Quest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-menu" class="screen">
+        <h1>Project Quest</h1>
+        <p>Test your project management skills!</p>
+        <img src="project-management.png" alt="Project Management" class="game-image">
+        <button id="start-button" class="btn-primary">Start Game</button>
+        <button id="instructions-button" class="btn-secondary">Instructions</button>
+    </div>
+
+    <div id="game-screen" class="screen" style="display: none;">
+        <h2>Project Management Dashboard</h2>
+        <div class="player-scores">
+            <div>Player 1: <span id="player1-score">0</span> points</div>
+            <div>Player 2: <span id="player2-score">0</span> points</div>
+        </div>
+        <button id="take-quiz-button" class="btn-primary">Take Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="screen" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="options-container" class="options-container"></div>
+        <div id="timer">Time left: <span id="time-left">10</span> seconds</div>
+    </div>
+
+    <div id="results-screen" class="screen" style="display: none;">
+        <h2>Game Over!</h2>
+        <div class="player-scores">
+            <div>Player 1: <span id="final-player1-score">0</span> points</div>
+            <div>Player 2: <span id="final-player2-score">0</span> points</div>
+        </div>
+        <button id="play-again-button" class="btn-primary">Play Again</button>
+        <button id="exit-button" class="btn-secondary">Exit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
